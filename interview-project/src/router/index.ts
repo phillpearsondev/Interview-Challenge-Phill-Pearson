@@ -16,11 +16,13 @@ const router = createRouter({
 export default router
 
 window.onload = (event) => {
+  // Grab the element to menipulate, then Generate a number between 0 and 100
   var number = document.getElementById('number-test');
+  var getRandomNumber = Math.floor(Math.random() * 100);
 
   if (number != null) {
-    // Generate a number between 0 and 100
-    number.innerHTML += Math.floor(Math.random() * 100);
+    // Set the HTML element content as the generated number
+    number.innerHTML += getRandomNumber;
 
     // Exeption for if the element is null
   } else {
