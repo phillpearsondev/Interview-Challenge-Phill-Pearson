@@ -7,15 +7,13 @@ import HelloWorld from './components/HelloWorld.vue'
   <header>
     <img alt="clix logo" class="logo" src="@/assets/logo.png" />
 
-    <div class="wrapper">
-      <HelloWorld msg="You did it!" />
-
-      <nav>
-        <RouterLink to="/">Home</RouterLink>
-        <RouterLink to="/about">About</RouterLink>
-      </nav>
-    </div>
   </header>
+  <main>
+    <h1 id="number-test">
+
+    </h1>
+
+  </main>
 
   <RouterView />
 </template>
@@ -23,7 +21,7 @@ import HelloWorld from './components/HelloWorld.vue'
 <style scoped>
 header {
   line-height: 1.5;
-  max-height: 100vh;
+  max-height: 25vh;
 }
 
 .logo {
