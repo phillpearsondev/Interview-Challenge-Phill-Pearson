@@ -2,8 +2,8 @@
 
 #app {
   max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
+  margin: 0 40vw;
+  padding: 0;
   font-weight: normal;
 }
 
@@ -14,9 +14,27 @@ a,
   transition: 0.4s;
 }
 
-#push-button, img {
-  height: 100px;
-  width: auto;
+.random-number-generator {
+  background-color: rgba(64, 0, 87, 0.335);
+  border: solid 2px rgb(123, 74, 141);
+  width: 15vh;
+  height: 15vh;
+  margin: 5vh;
+  padding: 0;
+  transform: translate(50, 0);
+}
+
+h1 {
+  height: 10vh;
+  font-size: 10vh;
+  margin: 10px;
+  margin-left: 12px;
+  line-height: 1.1;
+  padding: 0;
+}
+
+#push-button img {
+  height: 25vh;
 }
 
 @media (hover: hover) {
@@ -33,7 +51,6 @@ a,
 
   #app {
     display: grid;
-    grid-template-columns: 1fr 1fr;
     padding: 0 2rem;
   }
 }

@@ -1,12 +1,16 @@
 <script setup lang="ts">
-import TheWelcome from '@/components/TheWelcome.vue'
-import Button from '@/components/Button.vue'
 </script>
 
 <template>
-  <main>
+    <main>
+        <div class="random-number-generator">
+            <h1 id="number-test"></h1>
+        </div>
 
-    <Button />
+        <div id="push-button">
+            <img src="../assets/images/btn-up.png" alt="">
+        </div>
 
-  </main>
+    </main>
+
 </template>
