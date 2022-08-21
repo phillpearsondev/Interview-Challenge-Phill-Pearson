@@ -4,10 +4,11 @@
 // The string is stored in a variabl: numberAsString, and is displayed to the user
 // Original nuber generated is stored in variable: getRandomNumber
 
+export var getRandomNumber = Math.floor(Math.random() * 100);
+
 export function randomNumberGenerator() {
     // Grab the element to menipulate, then Generate a number between 0 and 100
     var numberElement = document.getElementById('number-test');
-    var getRandomNumber = Math.floor(Math.random() * 100);
     var numberAsString = getRandomNumber.toString();
     var numberZero = '0';
 
@@ -31,5 +32,4 @@ export function randomNumberGenerator() {
     } else {
         console.log('number is null')
     }
-
 };

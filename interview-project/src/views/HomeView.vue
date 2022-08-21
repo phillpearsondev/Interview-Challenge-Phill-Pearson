@@ -8,7 +8,7 @@
         </div>
 
         <div id="push-button">
-            <button id="test-button">
+            <button id="button-actual">
                 <div id="svg-circle-container">
                     content
                 </div>

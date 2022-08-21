@@ -33,7 +33,7 @@ h1 {
   padding: 0;
 }
 
-#test-button {
+#button-actual {
   background: url(../assets/images/btn-up.png) no-repeat;
   background-position: 0%;
   background-size: contain;
@@ -42,7 +42,7 @@ h1 {
   border: none;
 }
 
-#test-button:active {
+#button-actual:active {
   background: url(../assets/images/btn-down.png) no-repeat;
   background-position: 0%;
   background-size: contain;
@@ -52,7 +52,7 @@ h1 {
 }
 
 #svg-circle-container {
-  background: rgba(0, 255, 0, 0.485);
+  background: rgb(0, 255, 0);
   height: 20vh;
   width: 20vh;
   border-radius: 50%;

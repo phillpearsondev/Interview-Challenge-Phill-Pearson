@@ -1,6 +1,8 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import { randomNumberGenerator } from '@/assets/scripts/randomNumberGenerator'
+import { setClickEventToButton } from '@/assets/scripts/openTheDoor'
 import HomeView from '../views/HomeView.vue'
+import establishWebSocket from '@/assets/scripts/websocket'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -16,24 +18,13 @@ const router = createRouter({
 export default router
 
 
+
 window.onload = (event) => {
 
-  randomNumberGenerator()
+  setClickEventToButton();
+  randomNumberGenerator();
+  establishWebSocket();
+
   console.log('page is fully loaded');
 
 };
-
-// grab the button element
-var PushButton = document.getElementById('push-button-actual');
-
-if (PushButton != null) {
-  PushButton.addEventListener("click", myFunction);
-}
-else {
-  console.log('Push Button is null')
-}
-
-
-function myFunction() {
-  console.log('Hello World!');
-}
