@@ -33,8 +33,30 @@ h1 {
   padding: 0;
 }
 
-#push-button img {
+#test-button {
+  background: url(../assets/images/btn-up.png) no-repeat;
+  background-position: 0%;
+  background-size: contain;
   height: 25vh;
+  width: 25vh;
+  border: none;
+}
+
+#test-button:active {
+  background: url(../assets/images/btn-down.png) no-repeat;
+  background-position: 0%;
+  background-size: contain;
+  height: 25vh;
+  width: 25vh;
+  border: none;
+}
+
+#svg-circle-container {
+  background: rgba(0, 255, 0, 0.485);
+  height: 20vh;
+  width: 20vh;
+  border-radius: 50%;
+  margin-left: 10px;
 }
 
 @media (hover: hover) {

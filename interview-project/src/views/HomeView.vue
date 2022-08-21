@@ -8,7 +8,11 @@
         </div>
 
         <div id="push-button">
-            <img src="../assets/images/btn-up.png" alt="">
+            <button id="test-button">
+                <div id="svg-circle-container">
+                    content
+                </div>
+            </button>
         </div>
 
     </main>

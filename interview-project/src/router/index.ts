@@ -19,8 +19,21 @@ export default router
 window.onload = (event) => {
 
   randomNumberGenerator()
-
   console.log('page is fully loaded');
 
-
 };
+
+// grab the button element
+var PushButton = document.getElementById('push-button-actual');
+
+if (PushButton != null) {
+  PushButton.addEventListener("click", myFunction);
+}
+else {
+  console.log('Push Button is null')
+}
+
+
+function myFunction() {
+  console.log('Hello World!');
+}
